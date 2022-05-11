@@ -27,7 +27,7 @@ function card(data) {
     const month = date.substring(5, 7);
     const year = date.substring(0, 4);
 
-    const name = data.username.substring(0, name.indexOf(' by')); // remove everything after by
+    const name = data.username.substring(0, data.username.indexOf(' by')); // remove everything after by
 
     card.innerHTML = `<div class="card-info">
         <h2>${data.title}</h2>
