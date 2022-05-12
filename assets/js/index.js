@@ -48,12 +48,9 @@ function card(data) {
             buttons[i].addEventListener('click',()=>copyToClipboard('Embed URL',data.embed_url))
         }
     }
-
-
-
+    
     return card;
 }
-
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
